@@ -20,7 +20,7 @@ works.forEach(([file, tag, title]) => {
   const v = el.querySelector("video");
   el.addEventListener("mouseenter", () => v.play().catch(() => {}));
   el.addEventListener("mouseleave", () => v.pause());
-  el.addEventListener("click", () => openLb(src));
+  el.addEventListener("click", () => el.querySelector("video") && openLb(src));
   grid.appendChild(el);
 });
 
@@ -33,8 +33,27 @@ document.addEventListener("keydown", e => e.key === "Escape" && closeLb());
 const track = document.getElementById("logoTrack");
 track.innerHTML += track.innerHTML;
 
-// Yüklenemeyen görselleri gizle
-document.querySelectorAll("img").forEach(i => i.addEventListener("error", () => i.style.visibility = "hidden"));
+// Medya dosyası yoksa placeholder göster (gerçek dosyalar eklenince otomatik görünür)
+let hue = 0;
+function placeholder(el) {
+  if (el.dataset.ph) return;
+  el.dataset.ph = 1;
+  if (el.closest(".track")) {                       // logo şeridi: marka adını yazı olarak göster
+    const s = document.createElement("span");
+    s.className = "logo-ph"; s.textContent = el.alt;
+    return el.replaceWith(s);
+  }
+  if (el.closest(".tags") || el.closest(".brand")) return el.remove();
+  const d = document.createElement("div");
+  d.className = "ph " + (el.tagName === "VIDEO" ? "ph-v" : "ph-i");
+  d.style.setProperty("--h", (hue = (hue + 47) % 360));
+  el.replaceWith(d);
+}
+const broken = el => el.tagName === "VIDEO" ? (el.error || el.networkState === 3) : (el.complete && !el.naturalWidth);
+document.querySelectorAll("img, video").forEach(el => {
+  if (broken(el)) placeholder(el);
+  else el.addEventListener("error", () => placeholder(el));
+});
 
 // Mobil menü linke tıklanınca kapansın
 document.querySelectorAll(".menu a").forEach(a => a.addEventListener("click", () => document.body.classList.remove("open")));

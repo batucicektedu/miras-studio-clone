@@ -113,3 +113,18 @@ h3{font-size:1.15rem;font-weight:600;margin-bottom:6px}
   .foot-in{grid-template-columns:1fr 1fr}
 }
 @media (max-width:520px){.work{grid-template-columns:1fr}.faces{grid-template-columns:repeat(3,1fr)}}
+
+/* placeholder'lar */
+.ph{width:100%;background:linear-gradient(135deg,hsl(var(--h) 35% 18%),hsl(calc(var(--h) + 40) 45% 10%));background-size:200% 200%;animation:phm 8s ease-in-out infinite alternate;position:relative}
+.ph-v::after{content:"▶";position:absolute;inset:0;display:grid;place-items:center;font-size:1.6rem;color:#ffffff55}
+.hero-reel .ph{height:100%}
+.hero-reel .ph-v::after{display:none}
+.grid2>*,.grid3>*,.faces>*,.work>*,.bento>*{min-width:0}
+.film .ph{aspect-ratio:16/9;border-radius:var(--r)}
+.b .ph{width:calc(100% + 52px);margin:-26px -26px 20px;aspect-ratio:16/8}
+.media-card .ph{height:100%}
+.pillar .ph{aspect-ratio:16/10;border-radius:12px;margin-bottom:18px}
+.faces .ph{aspect-ratio:3/4;border-radius:14px}
+.card .ph{position:absolute;inset:0}
+.logo-ph{font-weight:800;font-size:1.05rem;letter-spacing:-.01em;color:#d4d4d8;opacity:.75;white-space:nowrap}
+@keyframes phm{to{background-position:100% 100%}}
