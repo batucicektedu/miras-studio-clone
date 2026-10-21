@@ -78,9 +78,9 @@ for (let c = 0; c < 5; c++) {
   wall.insertAdjacentHTML("beforeend", `<div class="col ${c % 2 ? "rev" : ""}" style="--d:${46 + c * 7}s"><div class="col-in">${html}${html}</div></div>`);
 }
 
-// Logo şeridi
-const track = document.getElementById("logoTrack");
-track.innerHTML = B.map(logo).join("").repeat(2);
+// Logo şeritleri: üstteki sola, alttaki sağa kayar
+document.getElementById("logoTrack").innerHTML = B.map(logo).join("").repeat(2);
+document.getElementById("logoTrack2").innerHTML = [...B.slice(6), ...B.slice(0, 6)].map(logo).join("").repeat(2);
 
 // Üretim panosundaki teslimatlar
 document.getElementById("deliv").innerHTML =

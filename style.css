@@ -85,6 +85,8 @@ h3{font-size:1.15rem;font-weight:600;margin-bottom:6px}
 .marquee{overflow:hidden;margin-top:24px;-webkit-mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
 .track{display:flex;gap:56px;width:max-content;animation:mq 50s linear infinite;align-items:center}
 .track .lg{font-size:1.15rem;color:#d4d4d8;opacity:.8}
+.track.rev{animation-direction:reverse;animation-duration:60s}
+.marquee+.marquee{margin-top:28px}
 @keyframes mq{to{transform:translateX(-50%)}}
 
 /* bölümler */
