@@ -5,16 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Miras Studio · Büyüyen markaların yaratıcı ortağı</title>
 <meta name="description" content="Ankara merkezli yaratıcı üretim ajansı. Tasarım, video ve içerik üretimi tek ekipte.">
+<meta property="og:title" content="Miras Studio · Büyüyen markaların yaratıcı ortağı">
+<meta property="og:description" content="Tasarım, video ve içerik üretimi tek ekipte. İlk taslak 48 saatte.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%230b0b0d%27/%3E%3Ctext x=%2716%27 y=%2723%27 font-family=%27Arial%27 font-weight=%27900%27 font-size=%2720%27 fill=%27%23e4b363%27 text-anchor=%27middle%27%3EM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="#" class="brand"><img src="logos/miras-m.png" alt="" onerror="this.remove()"><span class="brand-name">Miras Studio</span></a>
+    <a href="#" class="brand"><span class="brand-mark">M</span><span class="brand-name">Miras Studio</span></a>
     <nav class="menu" id="menu">
       <div class="dd"><a href="#hizmetler">Hizmetler</a>
         <div class="dd-p"><a href="#hizmetler">Tüm hizmetler</a><a href="#hizmetler-akis">Hizmet akışı</a><a href="#neden">Çalışma modeli</a></div></div>
@@ -29,14 +32,9 @@
   </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO: kayan iş vitrini -->
 <section class="hero">
-  <div class="hero-reel" aria-hidden="true">
-    <video src="videos/beylerbeyi.mp4?v=2" autoplay muted loop playsinline></video>
-    <video src="videos/kadinlar-tarih-yazacak.mp4?v=2" autoplay muted loop playsinline></video>
-    <video src="videos/collaquin.mp4?v=2" autoplay muted loop playsinline></video>
-    <video src="videos/gizem-unal.mp4?v=2" autoplay muted loop playsinline></video>
-  </div>
+  <div class="wall" id="wall" aria-hidden="true"></div>
   <div class="hero-shade"></div>
   <div class="wrap hero-in">
     <p class="eyebrow">Ankara · Yaratıcı üretim ajansı</p>
@@ -49,15 +47,13 @@
   </div>
 </section>
 
-<!-- LOGOS -->
+<!-- LOGOLAR -->
 <section class="logos">
   <p class="muted center">40+ markanın yaratıcı ortağı</p>
-  <div class="marquee"><div class="track" id="logoTrack">
-    <img src="logos/iyi-parti-beyaz.png" alt="İYİ Parti"><img src="logos/gezinomi.png" alt="Gezinomi"><img src="logos/chp.png" alt="CHP"><img src="logos/beylerbeyi.png" alt="Beylerbeyi"><img src="logos/collaquin-yatay-logo.png" alt="CollaQuin"><img src="logos/gizem-unal.png" alt="Gizem Ünal"><img src="logos/farm.png" alt="Farm"><img src="logos/ibrahim-unver.png" alt="İbrahim Ünver"><img src="logos/hemsin-nobg.png" alt="Hemşin"><img src="logos/smash.png" alt="Smash"><img src="logos/espresso.png" alt="Espresso"><img src="logos/becof.png" alt="Becof"><img src="logos/gopa.png" alt="Gopa"><img src="logos/servan-gokhan-transparent.png" alt="Servan Gökhan"><img src="logos/banagore.png" alt="Banagöre">
-  </div></div>
+  <div class="marquee"><div class="track" id="logoTrack"></div></div>
 </section>
 
-<!-- VALUE -->
+<!-- DEĞER ÖNERİSİ -->
 <section class="wrap split">
   <div>
     <p class="eyebrow">Hızı artırın</p>
@@ -69,22 +65,47 @@
       <li>İlk taslak 48 saat içinde</li>
     </ul>
   </div>
-  <div class="media-card"><img src="work/ofis.jpg" alt="Ofisimiz" loading="lazy"></div>
+  <div class="board">
+    <div class="board-head">
+      <div><small>Kampanya</small><b>Rota Turizm · Yaz 2026</b></div>
+      <span class="pill-live">● Üretimde</span>
+    </div>
+    <ol class="steps">
+      <li class="done"><i></i>Brief alındı<span>Pzt</span></li>
+      <li class="done"><i></i>Senaryo ve moodboard<span>Sal</span></li>
+      <li class="now"><i></i>Çekim günü<span>Bugün</span></li>
+      <li><i></i>Kurgu ve renk<span>Per</span></li>
+      <li><i></i>Teslim: 6 format<span>Cum</span></li>
+    </ol>
+    <div class="deliv" id="deliv"></div>
+    <div class="board-foot"><span>İlk taslak</span><b>48 saat</b></div>
+  </div>
 </section>
 
-<!-- TEAM / PILLARS -->
+<!-- EKİP / İLKELER -->
 <section class="wrap block">
   <p class="eyebrow">Ekibinizin aradığı yaratıcı ortak</p>
   <h2>Doğru ekip, net süreç</h2>
   <p class="muted narrow">Ekibinizin bir uzantısı gibi çalışıyoruz: önceliklerinizi biliyor, markanızın dilini konuşuyor, işi uçtan uca üstleniyoruz.</p>
   <div class="grid3">
-    <article class="pillar"><img src="work/pillar-01.png" alt="" loading="lazy"><h3>Esnek çalışma modeli</h3><p>Proje bazlı ya da aylık; ihtiyacınız kadar ekip, ihtiyacınız kadar üretim.</p></article>
-    <article class="pillar"><img src="work/pillar-02.png" alt="" loading="lazy"><h3>Deneyimli yaratıcı ekip</h3><p>Tasarımcı, yönetmen, kurgucu ve metin yazarı aynı masada.</p></article>
-    <article class="pillar"><img src="work/pillar-03.png" alt="" loading="lazy"><h3>Uçtan uca üretim</h3><p>Fikirden çekime, kurgudan yayına kadar tüm süreç tek elden.</p></article>
+    <article class="pillar">
+      <div class="viz viz-plans"><span>Proje bazlı</span><span class="on">Aylık paket</span><span>Ekip kiralama</span></div>
+      <h3>Esnek çalışma modeli</h3><p>Proje bazlı ya da aylık; ihtiyacınız kadar ekip, ihtiyacınız kadar üretim.</p></article>
+    <article class="pillar">
+      <div class="viz viz-team">
+        <div class="av" style="--c:#e4b363">EY<small>Yönetmen</small></div>
+        <div class="av" style="--c:#7aa2f7">SK<small>Tasarım</small></div>
+        <div class="av" style="--c:#9ece6a">MA<small>Kurgu</small></div>
+        <div class="av" style="--c:#f7768e">DT<small>Metin</small></div>
+      </div>
+      <h3>Deneyimli yaratıcı ekip</h3><p>Tasarımcı, yönetmen, kurgucu ve metin yazarı aynı masada.</p></article>
+    <article class="pillar">
+      <div class="viz viz-pipe"><span data-icon="idea"></span><i></i><span data-icon="camera"></span><i></i><span data-icon="cut"></span><i></i><span data-icon="send"></span></div>
+      <h3>Uçtan uca üretim</h3><p>Fikirden çekime, kurgudan yayına kadar tüm süreç tek elden.</p></article>
   </div>
 </section>
 
-<!-- STATS -->
+<!-- RAKAMLAR -->
 <section class="stats" id="rakamlar">
   <div class="wrap grid4">
     <div><b data-count="30">30</b><span>+</span><p>Teslim edilen proje</p></div>
@@ -94,94 +115,135 @@
   </div>
 </section>
 
-<!-- FILMS -->
+<!-- FİLMLER -->
 <section class="wrap block" id="hikayeler">
   <p class="eyebrow">Reklam filmlerimizden</p>
   <h2>Öne çıkan filmler</h2>
-  <div class="grid2">
-    <figure class="film"><video src="videos/hikaye-vatan.mp4?v=2" controls preload="metadata" playsinline></video><figcaption>Kamu spotu · Hikâye: Vatan</figcaption></figure>
-    <figure class="film"><video src="videos/hikaye-vakti-geldi.mp4?v=2" controls preload="metadata" playsinline></video><figcaption>Reklam filmi · Vakti Geldi</figcaption></figure>
-  </div>
+  <div class="grid2" id="films"></div>
 </section>
 
-<!-- SERVICES CLOUD -->
+<!-- HİZMETLER -->
 <section class="wrap block" id="hizmetler">
   <p class="eyebrow">15+ yaratıcı hizmet</p>
   <h2>İhtiyacınız olan her şey, tek çatı altında</h2>
   <div class="tags">
-    <span><img src="icons/ad.svg" alt="">Reklam kreatifi</span>
-    <span><img src="icons/motion.svg" alt="">Video prodüksiyon</span>
-    <span><img src="icons/photo.svg" alt="">Fotoğraf çekimi</span>
-    <span><img src="icons/motion.svg" alt="">Motion grafik</span>
-    <span>Web tasarım</span><span>Açıkhava</span>
-    <span><img src="icons/3d.svg" alt="">3B tasarım</span>
-    <span>Ambalaj tasarımı</span><span>Marka stratejisi</span><span>Sosyal medya yönetimi</span>
-    <span><img src="icons/email.svg" alt="">E-posta tasarımı</span>
-    <span><img src="icons/ai.svg" alt="">Yapay zekâ ile üretim</span>
-    <span>Kurumsal kimlik</span><span>Sunum tasarımı</span><span>Etkinlik içerikleri</span><span>Metin yazarlığı</span>
+    <span data-i="megaphone">Reklam kreatifi</span>
+    <span data-i="video">Video prodüksiyon</span>
+    <span data-i="camera">Fotoğraf çekimi</span>
+    <span data-i="sparkle">Motion grafik</span>
+    <span data-i="browser">Web tasarım</span>
+    <span data-i="billboard">Açıkhava</span>
+    <span data-i="cube">3B tasarım</span>
+    <span data-i="box">Ambalaj tasarımı</span>
+    <span data-i="target">Marka stratejisi</span>
+    <span data-i="heart">Sosyal medya yönetimi</span>
+    <span data-i="mail">E-posta tasarımı</span>
+    <span data-i="ai">Yapay zekâ ile üretim</span>
+    <span data-i="diamond">Kurumsal kimlik</span>
+    <span data-i="slides">Sunum tasarımı</span>
+    <span data-i="ticket">Etkinlik içerikleri</span>
+    <span data-i="pen">Metin yazarlığı</span>
     <span class="more">ve dahası</span>
   </div>
   <h3 class="sub">Her ekip için</h3>
-  <div class="faces">
-    <figure><img src="faces/performans.jpg" alt=""><figcaption>Performans</figcaption></figure>
-    <figure><img src="faces/urun-pazarlama.jpg" alt=""><figcaption>Ürün pazarlama</figcaption></figure>
-    <figure><img src="faces/icerik.jpg" alt=""><figcaption>İçerik</figcaption></figure>
-    <figure><img src="faces/iletisim.jpg" alt=""><figcaption>İletişim</figcaption></figure>
-    <figure><img src="faces/sosyal.jpg" alt=""><figcaption>Sosyal</figcaption></figure>
-    <figure><img src="faces/marka.jpg" alt=""><figcaption>Marka</figcaption></figure>
-    <figure><img src="faces/etkinlik.jpg" alt=""><figcaption>Etkinlik</figcaption></figure>
+  <div class="depts">
+    <div style="--c:#7aa2f7"><span data-icon="chart"></span><b>Performans</b><small>Dönüşüm odaklı reklam setleri</small></div>
+    <div style="--c:#e4b363"><span data-icon="box"></span><b>Ürün pazarlama</b><small>Lansman görselleri ve demo videoları</small></div>
+    <div style="--c:#9ece6a"><span data-icon="pen"></span><b>İçerik</b><small>Blog, bülten ve uzun içerik</small></div>
+    <div style="--c:#f7768e"><span data-icon="megaphone"></span><b>İletişim</b><small>Basın kiti ve kurumsal duyurular</small></div>
+    <div style="--c:#bb9af7"><span data-icon="heart"></span><b>Sosyal</b><small>Reels, story ve gönderi akışı</small></div>
+    <div style="--c:#ff9e64"><span data-icon="diamond"></span><b>Marka</b><small>Kimlik, kılavuz ve ton</small></div>
+    <div style="--c:#2ac3de"><span data-icon="ticket"></span><b>Etkinlik</b><small>Sahne, davetiye ve aftermovie</small></div>
   </div>
 </section>
 
-<!-- WORK -->
+<!-- İŞLER -->
 <section class="wrap block" id="isler">
   <p class="eyebrow">İşlerimiz</p>
   <h2>Son projeler</h2>
+  <div class="filters" id="filters">
+    <button class="on" data-f="">Tümü</button><button data-f="Reklam filmi">Reklam filmi</button><button data-f="Sosyal medya">Sosyal medya</button><button data-f="Kurumsal kimlik">Kurumsal kimlik</button>
+  </div>
   <div class="work" id="workGrid"></div>
 </section>
 
-<!-- FLOW -->
+<!-- ÇALIŞMA AKIŞI -->
 <section class="wrap block" id="neden">
   <p class="eyebrow">Neden biz</p>
   <h2>Tek akış, sıfır karmaşa</h2>
   <div class="bento" id="hizmetler-akis">
-    <article class="b wide"><video src="videos/calisma-merkezi.mp4?v=2" autoplay muted loop playsinline></video><h3>Tek çalışma merkezi</h3><p>Brief, revizyon, onay ve teslim aynı yerde. E-posta zincirlerinde kaybolan dosya yok.</p></article>
-    <article class="b"><video src="videos/bento-akis.mp4?v=2" autoplay muted loop playsinline></video><h3>Adım adım akış</h3><p>Brief alınır, marka dosyası kontrol edilir, net bir brief yazılır ve görevlere dönüşür.</p></article>
-    <article class="b"><video src="videos/bento-hafiza.mp4?v=2" autoplay muted loop playsinline></video><h3>Marka hafızası</h3><p>Geçmiş tercihleriniz birikir; her yeni iş bir öncekinden daha hızlı ilerler.</p></article>
-    <article class="b wide"><video src="videos/bento-duzen.mp4?v=2" autoplay muted loop playsinline></video><h3>Mevcut araçlarınızla</h3><p>WhatsApp, e-posta, Trello, Slack, Drive ve Meet. Siz nerede çalışıyorsanız biz de oradayız.</p></article>
+    <article class="b wide">
+      <div class="mock kanban">
+        <div><h5>Brief</h5><p>Sonbahar kampanyası</p><p>Ürün çekimi · 12 kare</p></div>
+        <div><h5>Revizyon</h5><p class="hl">Reels kurgusu v2</p></div>
+        <div><h5>Onay</h5><p>Afiş seti <em>✓ Onaylandı</em></p><p>Logo varyasyonu</p></div>
+        <div><h5>Teslim</h5><p>Lansman videosu <em>✓</em></p><p>Story paketi <em>✓</em></p></div>
+      </div>
+      <h3>Tek çalışma merkezi</h3><p>Brief, revizyon, onay ve teslim aynı yerde. E-posta zincirlerinde kaybolan dosya yok.</p></article>
+    <article class="b">
+      <div class="mock flow">
+        <p class="ok">Brief alındı</p><p class="ok">Marka dosyası kontrol edildi</p><p class="ok">Net brief yazıldı</p><p class="go">Görevlere dönüştürülüyor</p>
+      </div>
+      <h3>Adım adım akış</h3><p>Brief alınır, marka dosyası kontrol edilir, net bir brief yazılır ve görevlere dönüşür.</p></article>
+    <article class="b">
+      <div class="mock memory">
+        <div class="sw"><i style="background:#0077b6"></i><i style="background:#90e0ef"></i><i style="background:#ffb703"></i><i style="background:#f8f9fa"></i></div>
+        <div class="aa"><b>Aa</b><span>Space Grotesk<br><small>Başlık fontu</small></span></div>
+        <div class="tone"><span>Samimi</span><span>Enerjik</span><span>Sade</span></div>
+      </div>
+      <h3>Marka hafızası</h3><p>Geçmiş tercihleriniz birikir; her yeni iş bir öncekinden daha hızlı ilerler.</p></article>
+    <article class="b wide">
+      <div class="mock tools">
+        <span style="--c:#25d366">WhatsApp</span><span style="--c:#ea4335">E-posta</span><span style="--c:#0079bf">Trello</span><span style="--c:#e01e5a">Slack</span><span style="--c:#fbbc04">Drive</span><span style="--c:#00897b">Meet</span>
+      </div>
+      <h3>Mevcut araçlarınızla</h3><p>WhatsApp, e-posta, Trello, Slack, Drive ve Meet. Siz nerede çalışıyorsanız biz de oradayız.</p></article>
   </div>
 </section>
 
-<!-- SIX SERVICES -->
+<!-- ANA HİZMETLER -->
 <section class="wrap block" id="kaynaklar">
   <p class="eyebrow">Ana hizmetler</p>
   <h2>Neler yapıyoruz</h2>
   <div class="grid3 numbered">
-    <article><i>01</i><h3>Marka kimliği</h3><p>Logo, renk, tipografi ve kullanım kılavuzu ile tutarlı bir kimlik.</p></article>
-    <article><i>02</i><h3>Video prodüksiyon</h3><p>Reklam filmi, kampanya ve kurumsal tanıtım; senaryodan kurguya.</p></article>
-    <article><i>03</i><h3>Sosyal medya içeriği</h3><p>Planlı, düzenli ve markaya uygun gönderi, reels ve hikâyeler.</p></article>
-    <article><i>04</i><h3>Web tasarım</h3><p>Hızlı, mobil uyumlu ve dönüşüm odaklı web siteleri.</p></article>
-    <article><i>05</i><h3>Ambalaj tasarımı</h3><p>Rafta fark edilen, markayı anlatan ambalajlar.</p></article>
-    <article><i>06</i><h3>Sunum ve rapor</h3><p>Yatırımcı sunumundan faaliyet raporuna, okunur ve etkili tasarım.</p></article>
+    <article><div class="nh"><i>01</i><span data-icon="diamond"></span></div><h3>Marka kimliği</h3><p>Logo, renk, tipografi ve kullanım kılavuzu ile tutarlı bir kimlik.</p></article>
+    <article><div class="nh"><i>02</i><span data-icon="video"></span></div><h3>Video prodüksiyon</h3><p>Reklam filmi, kampanya ve kurumsal tanıtım; senaryodan kurguya.</p></article>
+    <article><div class="nh"><i>03</i><span data-icon="heart"></span></div><h3>Sosyal medya içeriği</h3><p>Planlı, düzenli ve markaya uygun gönderi, reels ve hikâyeler.</p></article>
+    <article><div class="nh"><i>04</i><span data-icon="browser"></span></div><h3>Web tasarım</h3><p>Hızlı, mobil uyumlu ve dönüşüm odaklı web siteleri.</p></article>
+    <article><div class="nh"><i>05</i><span data-icon="box"></span></div><h3>Ambalaj tasarımı</h3><p>Rafta fark edilen, markayı anlatan ambalajlar.</p></article>
+    <article><div class="nh"><i>06</i><span data-icon="slides"></span></div><h3>Sunum ve rapor</h3><p>Yatırımcı sunumundan faaliyet raporuna, okunur ve etkili tasarım.</p></article>
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- İLETİŞİM -->
 <section class="contact" id="iletisim">
-  <div class="wrap center">
-    <p class="eyebrow">İletişim</p>
-    <h2>30 dakikalık ücretsiz görüşme</h2>
-    <p class="muted narrow">Projenizi anlatın, size en uygun çalışma modelini birlikte belirleyelim.</p>
-    <div class="row center-row">
-      <a class="btn btn-primary" href="#iletisim" id="mailBtn">Görüşme ayarlayın</a>
+  <div class="wrap contact-in">
+    <div>
+      <p class="eyebrow">İletişim</p>
+      <h2>30 dakikalık ücretsiz görüşme</h2>
+      <p class="muted">Projenizi anlatın, size en uygun çalışma modelini birlikte belirleyelim.</p>
+      <ul class="checks">
+        <li>Aynı gün dönüş</li>
+        <li>Ücretsiz ilk fikir taslağı</li>
+        <li>Şeffaf, sabit fiyat teklifi</li>
+      </ul>
+      <p class="addr">Cinnah, Çankaya / Ankara</p>
     </div>
-    <p class="addr">Cinnah, Çankaya / Ankara</p>
+    <form class="form" id="form">
+      <label>Adınız<input name="ad" required placeholder="Ad Soyad"></label>
+      <label>Firma<input name="firma" placeholder="Firma adı"></label>
+      <label>Telefon<input name="tel" type="tel" required placeholder="05xx xxx xx xx"></label>
+      <label>İhtiyacınız
+        <select name="ihtiyac"><option>Reklam filmi</option><option>Sosyal medya yönetimi</option><option>Kurumsal kimlik</option><option>Web tasarım</option><option>Diğer</option></select></label>
+      <label class="full">Kısaca projeniz<textarea name="mesaj" rows="3" placeholder="Hedefiniz, takviminiz, bütçe aralığınız…"></textarea></label>
+      <button class="btn btn-primary full" type="submit">Görüşme talep et</button>
+      <p class="form-ok" id="formOk">Teşekkürler! Talebiniz alındı, en kısa sürede sizi arayacağız.</p>
+    </form>
   </div>
 </section>
 
 <footer class="foot">
   <div class="wrap foot-in">
-    <div><span class="brand-name">Miras Studio</span><p class="muted">Cinnah, Çankaya / Ankara</p></div>
+    <div><span class="brand"><span class="brand-mark">M</span><span class="brand-name">Miras Studio</span></span><p class="muted">Cinnah, Çankaya / Ankara</p></div>
     <div><h4>Hizmetler</h4><a href="#hizmetler">Tüm hizmetler</a><a href="#hizmetler-akis">Hizmet akışı</a><a href="#isler">İşlerimiz</a></div>
     <div><h4>Kurumsal</h4><a href="#neden">Yaklaşımımız</a><a href="#rakamlar">Rakamlarla</a><a href="#iletisim">İletişim</a></div>
     <div><h4>Kaynaklar</h4><a href="#hikayeler">Müşteri hikâyeleri</a><a href="#">Gizlilik politikası</a><a href="#">Kullanım koşulları</a></div>
@@ -189,7 +251,7 @@
   <p class="wrap copy muted">© <span id="yr"></span> Miras Studio. Tüm hakları saklıdır.</p>
 </footer>
 
-<div class="lightbox" id="lb" onclick="if(event.target===this)closeLb()"><button onclick="closeLb()" aria-label="Kapat">×</button><video id="lbv" controls playsinline></video></div>
+<div class="lightbox" id="lb"><button class="lb-x" aria-label="Kapat">×</button><div class="lb-in" id="lbIn"></div></div>
 
 <script src="main.js"></script>
 </body>
